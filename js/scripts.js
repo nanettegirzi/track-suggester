@@ -4,23 +4,22 @@ $(document).ready(function() {
     var size = $("select#size").val();
     var application = $("select#application").val();
     var android = $("select#android").val();
-    var language = $("select#android").val();
+    var excited = $("select#excited").val();
 
-    if (language === "C#/.Net" && size === "large company "&& android === "no") {
+
+    if (language === "C#/.Net" && size === "Large Company" && android === "No") {
       $("#csharp").show();
       $("#form").hide();
+    } else  if (language === "Ruby/Rails" && size === "Small Startup" && android === "Yes") {
+      $("#ruby").show();
+      $("#form").hide();
+    }  else  if (language === "PHP/Drupal" && application === "Backend" && android === "No") {
+        $("#php").show();
+        $("#form").hide();
     } else {
-       $("#Java").show();
-       $("form").hide();
-     }
-
-   
-
-
-
-
+      $("#java").show();
+      $("#form").hide();
+    }
      event.preventDefault();
-
-
     });
   });
