@@ -15,83 +15,74 @@
     </div>
 
     <form id="tracksuggester">
-      <div class="form-group">
-        <h3><label for="person"> First and Last name</label></h3>
+
+      <div class="form-group" id="name">
+        <label for="person"> First and Last name</label>
         <input id="person" class="form-control" type="text">
       </div>
 
-      <h3>Would you prefer to work at a large established company, or a small start up?</h3>
-
-      <div class="radio">
-        <label>
-          <input type="radio" name="companysize" value="large" checked>
-          Large company
-        </label>
+      <div class="form-group">
+        <label for"language">Do you already have experience with one of the language's listed below? Choose one from below.</label>
+          <select class="form-control" id="language">
+          <option value="1">C#/.Net</option>
+          <option value="2">Java/Android</option>
+          <option value="3">PHP/Drupal</option>
+          <option value="4">Ruby/Rails</option>
+        </select>
       </div>
 
-      <div class="radio">
-        <label>
-          <input type="radio" name="companysize" value="startup">
-          Frontend
-        </label>
+      <div class="form-group">
+        <label for="company-size">Would you prefer to work at a large established company, or a small start up?</label>
+        <select class="form-control" id="company-size">
+          <option value="1">Large Company</option>
+          <option value="2">Small Sartup</option>
+        </select>
       </div>
 
-      <h3>Would you primarily prefer to work on frontend or backend applications?</h3>
 
-      <div class="radio">
-        <label>
-          <input type="radio" name="application" value="frontend" checked>
-          Backend
-        </label>
+      <div class="form-group">
+        <label for="frontend-backend"> Would you primarily prefer to work on frontend or backend applications?</label>
+        <select class="form-control" id="frontend-backend">
+          <option value="1">Frontend</option>
+          <option value="2">Backend</option>
+        </select>
       </div>
 
-      <div class="radio">
-        <label>
-          <input type="radio" name="application" value="backend">
-          Frontend
-        </label>
+      <div class="form-group">
+        <label for="android"> Are you interested in working on Android mobile apps?</label>
+        <select class="form-control" id="android">
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
       </div>
 
-      <h3>Are you interested in working on Android mobile apps?</h3>
-
-      <div class="radio">
-        <label>
-          <input type="radio" name="android" value="yes" checked>
-          Yes
-        </label>
+      <div class="form-group">
+        <label for="excited"> Are you excited to take the next step to a new and exciting career in Web Development?</label>
+        <select class="form-control" id="excited">
+          <option value="1">YES!! Let's do this.</option>
+          <option value="2">No, I am terrified!</option>
+        </select>
       </div>
 
-      <div class="radio">
-        <label>
-          <input type="radio" name="android" value="no">
-          No
-        </label>
-      </div>
+        <br>
 
-      <h3>Do you already have experience with one of the language's listed below? Please choose one.</h2>
-
-    <select class="form-control" id="beverage">
-      <option value="1">C#/.Net</option>
-      <option value="2">Java/Android</option>
-      <option value="3">PHP/Drupal</option>
-      <option value="4">Ruby/Rails</option>
-    </select>
-      <br>
       <button type="submit" class="btn btn-primary">Submit Survey</button>
 
-      <div id="csharp">
-        <p>Hello<span class="peron"!</span>You should try the C# track.</p>
-      </div>
+    </form>
 
-      <div id="java">
-        <p>Hello<span class="peron"!</span>You should try the JavaScript track.</p>
-      </div>
-
-      <div id="php">
-        <p>Hello<span class="peron"!</span>You should try the PHP track.</p>
-      </div>
-
-
+    <div id="csharp">
+      <p>Hello<span class="peron"!</span>You should try the C# track.</p>
     </div>
-  </body>
-  </html>
+
+    <div id="java">
+      <p>Hello<span class="peron"!</span>You should try the JavaScript track.</p>
+    </div>
+
+    <div id="php">
+      <p>Hello<span class="peron"!</span>You should try the PHP track.</p>
+    </div>
+
+
+  </div>
+</body>
+</html>

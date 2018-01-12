@@ -5,14 +5,6 @@
   width: 100%;
 }
 
-#csharp {
-  display: none;
-}
-
-#java {
-  display: none;
-}
-
-#php {
+#csharp, #java, #php {
   display: none;
 }
