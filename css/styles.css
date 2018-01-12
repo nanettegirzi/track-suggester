@@ -1,0 +1,18 @@
+.jumbotron {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+#csharp {
+  display: none;
+}
+
+#java {
+  display: none;
+}
+
+#php {
+  display: none;
+}

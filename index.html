@@ -1,15 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Epicodus Track Suggester</title>
-  </head>
-  <body>
-    <div class="container">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Epicodus Track Suggester</title>
+</head>
+<body>
+  <div class="container">
+    <div class ="jumbotron">
+      <h1>What Programming Language Should I learn at Epicodus?</h1>
+      <h2>Fill out the below survey to find out.</h2>
+    </div>
+
+    <form id="tracksuggester">
+      <div class="form-group">
+        <h3><label for="person"> First and Last name</label></h3>
+        <input id="person" class="form-control" type="text">
+      </div>
+
+      <h3>Would you prefer to work at a large established company, or a small start up?</h3>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="companysize" value="large" checked>
+          Large company
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="companysize" value="startup">
+          Frontend
+        </label>
+      </div>
+
+      <h3>Would you primarily prefer to work on frontend or backend applications?</h3>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="application" value="frontend" checked>
+          Backend
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="application" value="backend">
+          Frontend
+        </label>
+      </div>
+
+      <h3>Are you interested in working on Android mobile apps?</h3>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="android" value="yes" checked>
+          Yes
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="android" value="no">
+          No
+        </label>
+      </div>
+
+      <h3>Do you already have experience with one of the language's listed below? Please choose one.</h2>
+
+    <select class="form-control" id="beverage">
+      <option value="1">C#/.Net</option>
+      <option value="2">Java/Android</option>
+      <option value="3">PHP/Drupal</option>
+      <option value="4">Ruby/Rails</option>
+    </select>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit Survey</button>
+
+      <div id="csharp">
+        <p>Hello<span class="peron"!</span>You should try the C# track.</p>
+      </div>
+
+      <div id="java">
+        <p>Hello<span class="peron"!</span>You should try the JavaScript track.</p>
+      </div>
+
+      <div id="php">
+        <p>Hello<span class="peron"!</span>You should try the PHP track.</p>
+      </div>
 
 
+    </div>
   </body>
-</html>
+  </html>
